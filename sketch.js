@@ -1,20 +1,37 @@
-var rose; 
 
 function setup() {
   createCanvas(400,400);
-  rose = createSprite(200,200,120,100);
-  rose.shapeColor = "white";
-console.log("Hello");
+  background(51);
+  box = createSprite(200,200,30,30);
+
 }
 
 function draw() 
 {
-  background(30);
-  drawSprites(); 
-  text("hello test",100,100);
-  console.log("hello draw")
+  if (keyIsDown(RIGHT_ARROW)) 
+  {
+    background("pink");
+    
+  }
+  if (keyIsDown(LEFT_ARROW)) 
+  {
+    background("lightblue");
+    
+  }
+ 
+    if (keyIsDown(UP_ARROW)) 
+  {
+    background("purple");
+   
+  }
+
+  if (keyIsDown(DOWN_ARROW)) 
+  {
+    background("lightgreen");
+  }
+
+
+  
+  drawSprites();
 }
-
-
-
 
